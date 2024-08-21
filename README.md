@@ -165,8 +165,8 @@ tar zxvf ../vsts-agent-linux-x64-3.243.0.tar.gz
 > Note 2: When asked agent pool, enter the name of agent pool which you created in above step
 3. Run Agent as a linux service
 ```sh
-sudo ./runsvc.sh install
-sudo ./runsvc.sh start
+sudo ./svc.sh install
+sudo ./svc.sh start
 ```
 
 * Create CD pipeline
