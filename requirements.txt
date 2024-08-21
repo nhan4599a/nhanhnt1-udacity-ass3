@@ -1,7 +1,7 @@
 flask==1.1.2
 pandas==1.1.2
 scikit-learn==0.24.2
-joblib==0.17.0
+joblib==1.2.0
 pylint==2.6.0
 pytest==6.2.4
 markupsafe==1.1.1
