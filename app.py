@@ -29,9 +29,9 @@ def predict():
     # Performs an sklearn prediction
     try:
         # Load pretrained model as clf. Try any one model. 
-        clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
-        # clf = joblib.load("./Housing_price_model/StochasticGradientDescent.joblib")
-        # clf = joblib.load("./Housing_price_model/GradientBoostingRegressor.joblib")
+        clf = joblib.load("./LinearRegression.joblib")
+        # clf = joblib.load("./StochasticGradientDescent.joblib")
+        # clf = joblib.load("./GradientBoostingRegressor.joblib")
     except Exception as e:
         LOG.info("JSON payload: %s, Error: %s", request.json, e)
         return "Model not loaded"
