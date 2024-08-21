@@ -23,7 +23,7 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/github_actions_diagram.jpg)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/github_actions_diagram.jpg)
 
 * This is project files meaning
 | File name | Meaning |
@@ -79,11 +79,11 @@ jobs:
         make test
 ```
 and now, visit your actions page of your repo, you will see running pipeline here
-![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/ci.png)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/ci.png)
 ## Part 2: CD using Azure DevOps
 ### Architecture diagram
 * Architecture Diagram
-![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/azure_devops_pipeline_diagram.jpg)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/azure_devops_pipeline_diagram.jpg)
 ### Instruction steps
 * Go to Azure Devops page (https://dev.azure.com/)  and sign in it, create a new Project inside your organization
 
@@ -109,7 +109,7 @@ git checkout azure_pipeline
 ```sh
 az webapp up -n <name of webapp> -g <name of resource_group> --sku B1 --runtime PYTHON:3.8
 ```
-![deployed webapp](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/app.png)
+![deployed webapp](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/app.png)
 
 > Note 1: `<name of webapp>` should be unique or the command will run into an error
 > Note 2: This will took a while for Azure to create and deploy your app
@@ -178,7 +178,7 @@ sudo ./runsvc.sh start
 - Choose `azure_pipeline` branch (because my azure pipeline yml file located in this branch)
 - Choose `azure-pipeline.yml` (because my azure pipeline yml file is named `azure-pipeline.yml`)
 - Click `Continue`
-![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/create_pipeline.png)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/create_pipeline.png)
 
 * It's time to see result since a build/deploy should be trigger automatically after above steps
 
@@ -189,7 +189,7 @@ sudo ./runsvc.sh start
 az webapp log tail
 ```
 
-![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass2/blob/main/images/log.png)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/main/images/log.png)
 
 ## Enhancements
 * Write more test cases
