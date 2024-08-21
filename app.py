@@ -27,13 +27,15 @@ def home():
 @app.route("/predict", methods=['POST'])
 def predict():
     # Performs an sklearn prediction
+    LOG.info("JSON payload: %s", request.json)
+
     try:
         # Load pretrained model as clf. Try any one model. 
         clf = joblib.load("./LinearRegression.joblib")
         # clf = joblib.load("./StochasticGradientDescent.joblib")
         # clf = joblib.load("./GradientBoostingRegressor.joblib")
     except Exception as e:
-        LOG.info("JSON payload: %s, Error: %s", request.json, e)
+        LOG.error(repr(e))
         return "Model not loaded"
 
     json_payload = request.json
