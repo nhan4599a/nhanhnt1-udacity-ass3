@@ -23,6 +23,11 @@ def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
+@app.route("/hello")
+def hello():
+    html = "<h1>Hello world!!!</h1>"
+    return html.format(format)
+
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
