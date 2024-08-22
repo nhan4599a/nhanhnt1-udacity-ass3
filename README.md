@@ -1,3 +1,4 @@
+[![Python application test with Github Actions](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/actions/workflows/main.yml/badge.svg)](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/actions/workflows/main.yml)
 # Building CI/CD pipeline using github actions and azure devops to automatically deploy app to Azure AppService on commit pushed
 
 ## Project Plan
