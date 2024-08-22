@@ -24,6 +24,12 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
+And clone your repo using `git clone <url to your repo>`
+
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/clone.png)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/make_all.png)
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/test.png)
+
 ![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/github_actions_diagram.jpg)
 
 * This is project files meaning
@@ -183,7 +189,15 @@ sudo ./svc.sh start
 
 * It's time to see result since a build/deploy should be trigger automatically after above steps
 
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/app_pipeline.png)
+
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/predict.png)
+
+
 * Try to edit app.py and push it to branch `azure_pipeline`, and you will see your pipeline is automatic triggered again
+
+![alt text](https://github.com/nhan4599a/nhanhnt1-udacity-ass3/blob/azure_pipeline/images/change_result.png)
+
 
 * Check AppService log
 ```sh
