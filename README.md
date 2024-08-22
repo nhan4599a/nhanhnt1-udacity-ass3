@@ -210,4 +210,4 @@ az webapp log tail
 * Write more test cases
 * Add performance testing to deployed application and modify CI pipeline to run it automatically on code pushed
 ## Demo 
-https://youtu.be/mj4qeOmC5qE
+https://youtu.be/Nx10xrCOxHE
